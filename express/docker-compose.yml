@@ -1,0 +1,15 @@
+version: '3'
+
+services: 
+  express:
+    image: my-express
+    container_name: my-express
+    restart: always
+    ports: 
+      - '3000:8080'
+    networks: 
+      - my_net
+
+networks: 
+  my_net:
+    external: true
