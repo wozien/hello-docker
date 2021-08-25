@@ -16,3 +16,18 @@ docker-compose up -d
 ``` 
 
 > Dockerfile 中的 COPY 路径是相对于 build 命令的 PATH 参数
+
+## nginx 
+
+构建镜像
+
+```bash
+docker build -f nginx/Dockerfile -t my-nginx .
+```
+
+启动容器
+
+```bash 
+cd nginx
+docker-compose up -d
+``` 

@@ -1,12 +1,12 @@
 version: '3'
 
 services: 
-  express:
-    image: my-express
-    container_name: my-express
+  nginx:
+    image: my-nginx
+    container_name: my-nginx
     restart: always
     ports: 
-      - '3000:3000'
+      - '8080:80'
     networks: 
       - my_net
 
